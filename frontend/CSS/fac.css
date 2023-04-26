@@ -6,23 +6,23 @@ body {
   }
   a {
     text-decoration: none;
-    color: #1a1e21;
+    color: #dee4e8;
   }
   
   /* admission buttom */
   a:hover {
-    color: #222222
+    color: #272424
   }
   
   /* Dropdown */
-  
+/*   
   .dropdown {
     display: inline-block;
     position: relative;
-  }
+  } */
   
   .dd-button {
-    background: #2f5971;
+    background: #4a87f0;
     color: #fff;
     display: inline-block;
     border: 1px solid gray;
@@ -247,11 +247,7 @@ body {
     gap: 1rem;
     align-items: center;
   }
-  .fac-img img{
-    height: auto;
-    width: auto;
-  }
- 
+
  
   
      

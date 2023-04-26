@@ -163,4 +163,6 @@
    display:flex;
    justify-content: flex-end;
 }
-
+.style{
+  color: #fff;
+}

@@ -6,26 +6,27 @@ body {
 }
 a {
   text-decoration: none;
-  color: #1a1e21;
+  color: #dee5eb;
 }
 
 /* admission buttom */
 a:hover {
-  color: #d13131
+  color: #231d1d
 }
 
 /* Dropdown */
 
-.dropdown {
+
+/* .dropdown {
   display: inline-block;
   position: relative;
-}
+} */
 
 .dd-button {
-  background: #2f5971;
+  background: #0e80c2;
   color: #fff;
   display: inline-block;
-  border: 1px solid gray;
+  border: 1px solid rgb(126, 117, 117);
   border-radius: 4px;
   padding: 10px 30px 10px 20px;
   cursor: pointer;
