@@ -128,7 +128,10 @@ body {
     transform-origin: bottom left;
   }
   
-  
+.container {
+  display: flex;
+  flex-direction: column;
+}
   
   .section-title h2 {
     text-shadow: 1px 1px 2px #4444;
@@ -179,6 +182,10 @@ body {
     height: 80%;
     width: 80%;
 }
+/* /* #content-img{
+  height: 300px;
+  object-fit:cover; */
+/* } */ 
   #infra {
     display: block;
   }
@@ -210,6 +217,10 @@ body {
     gap: 1rem;
     align-items: center;
   }
+  .lab-content {
+    display: flex;
+    align-items: center;
+  }
   .transport-content {
     display: flex;
     gap: 1rem;
@@ -226,6 +237,7 @@ body {
     gap: 1rem;
     align-items: center;
   }
+ .con
   .lab-class {
     font-weight:500;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -247,13 +259,79 @@ body {
     gap: 1rem;
     align-items: center;
   }
-
+.con{
+  display: flex;
+  gap:20px;
+}
+#con{
+  flex-direction: wrap;
+}
  
   
      
           
   
   @media(max-width: 567px){
+    
+  }
+  @media screen and (max-width:400px) {
+    *{
+      max-width: 400px;
+    }
+    #logo{
+      margin-left:35vw;
+    }
+    .container{
+      margin-left: -40px;
+    }
+
+    .navContent {
+      display: inline-flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      margin-left:-4rem;
+    }
+    .infra-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+    .infra-content p{
+      margin-left:0px;
+        
+    }
+    .con p{
+      margin-left:25px;
+    }
+  
+    .infra-class{
+      margin-left: 70px;
+    }
+    
+    #content-img{
+      margin-left:20px;
+      width: 37px;
+      width:35px;
+        }
+     
+       .transport-content{
+        display: flex;
+        flex-direction: column;
+       }
+       .transport-class h1{
+        margin-left:60px;
+       }
+       #content-img{
+        margin-left:-50px;
+        margin-top:10px;
+        width:375px;
+       }
+       #content-img1{
+        margin-left:-50px;
+        margin-top:10px;
+        width:375px;
+       }
+ 
     
   }
   /*****************************
@@ -291,7 +369,6 @@ body {
     left: 0;
     right: 0;
   }
-  
   
   
   .carousel-caption h5 {
