@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admission</title>
      
+
+  
+
     <link rel="icon" type="image/x-icon" href="/img/mr.jpeg">
       <!-- Bootstrap CSS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,15 +19,25 @@
   <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet">
-
+      <link rel="icon" type="image/x-icon" href="./img/mr.jpeg">
   <!-- End Bootstrap CSS -->
+
+
 
   <!--Custom Css-->
   <link rel="stylesheet" href="./CSS/style.css">
+ 
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!--stylesheets-->
 </head>
-<body>
-    
-    
+<body style="background-image: url('img/admissionbackground.jpg');">
     <header>
         <!--Navbar Start-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -54,7 +67,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="admission.html">Admission</a>
                         </li>
-
+    
                         <li class="nav-item">
                             <a class="nav-link" href="fac.html">Facilites</a>
                         </li>
@@ -66,7 +79,7 @@
                         </li>
                     </ul>
                   
-
+    
                           
                         </li>
                     </ul>
@@ -77,19 +90,16 @@
         <!--Navbar End-->
     </header>
 
-
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!--stylesheets-->
+    
+    
+    
     
 
 <!--mainbody -->
 <div class="ahead">
-<h2>Admission Form</h>
+<h2><b>Admission Form</b></h>
 </div>
+
 <div class="admission">
     <div>
         <img src="img/admission.png">
@@ -99,26 +109,33 @@
             <form id="formsubmit"class="form-horizontal row">
                 <div class="form-group">
                     <label for="student_name" class="control-label col-sm-3">Student Name :</label>
-                        <div class="col-sm-7">
-                            <input type="text" name="student_name" id="student_name" class="form-control">
+                        <div class="col-sm-5">
+                            <input type="text" name="student_name" id="student_name" class="form-control" required>
                         </div>
                         </div>
         
                         <div class="form-group">
                                         <label for="father_name" class="control-label col-sm-3">Father's Name :</label>
-                                        <div class="col-sm-7">
-                                            <input type="text" name="father_name" id="father_name" class="form-control">
+                                        <div class="col-sm-5">
+                                            <input type="text" name="father_name" id="father_name" class="form-control" required>
                                         </div>
                                     </div>
         
                                     <div class="form-group">
                                         <label for="mother_name" class="control-label col-sm-3">Mother's Name :</label>
-                                        <div class="col-sm-7">
-                                            <input type="text" name="mother_name" id="mother_name" class="form-control">
+                                        <div class="col-sm-5">
+                                            <input type="text" name="mother_name" id="mother_name" class="form-control" required>
                                         </div>
                                     </div>
-        
                                     <div class="form-group">
+                                        <label for="date_of_birth" class="control-label col-sm-3" >Date of Birth:</label>
+                                        <div class="col-sm-3">  
+                                            <input type="date" id="date_of_birth" name="date_day" class="form-control"></div>
+                        
+                                    </div>
+                                    
+        
+                                    <!-- <div class="form-group">
                                         <label for="date_of_birth" class="control-label col-sm-3">Date of Birth :</label>
                                         <div class="col-sm-2">
                                             <select name="date_day" id="date_of_birth" class="form-control">
@@ -155,14 +172,15 @@
                                                         <option value="2036">2036</option><option value="2037">2037</option><option value="2038">2038</option><option value="2039">2039</option><option value="2040">2040</option>
                                             </select>
                                         </div>
-                                    </div>
+                                    </div> -->
+
         
                                     <div class="form-group">
                                         <label class="control-label col-sm-3" for="mobile">Mobile :</label>
-                                        <div class="col-sm-4">
+                                        <div class="col-sm-3">
                                             <div class="input-group">
                                                 <span class="input-group-addon">+91</span>
-                                                <input type="text" class="form-control" id="mobile" maxlength="10">
+                                                <input type="text" class="form-control" id="mobile" maxlength="10" required>
                                             </div>
                                         </div>
                                     </div>
@@ -170,11 +188,13 @@
                                     <div class="form-group">
                                         <label for="gender" class="control-label col-sm-3">Gender :</label>
                                         <div class="col-sm-2">
-                                            <select name="gender" id="gender" class="form-control">
+                                            <!-- <select name="gender" id="gender" class="form-control">
                                                         <option value="" selected disabled>Select</option>
                                                         <option value="MALE">MALE</option>
                                                         <option value="FEMALE">FEMALE</option>
-                                                    </select>
+                                                    </select> -->
+                                                    <input type="radio" id="male" name="gender" value="MALE"> Male</input> 
+                                                <br><input type="radio" id="female" name="gender" value="FEMALE"> Female</input>
                                         </div>
                                         
                                     </div>
@@ -182,7 +202,7 @@
                                     <div class="form-group">
                                         <label for="blood_group" class="control-label col-sm-3">Blood Group :</label>
                                         <div class="col-sm-2">
-                                            <select name="blood_group" id="blood_group" class="form-control">
+                                            <select name="blood_group" id="blood_group" class="form-control" required>
                                                                 <option value="">Select</option>
                                                                 <option value="O+">O+</option>
                                                                 <option value="O-">O-</option>
@@ -199,28 +219,28 @@
         
                                     <div class="form-group">
                                         <label for="national_id" class="control-label col-sm-3">Adhar card number :</label>
-                                        <div class="col-sm-6">
-                                            <input type="text" name="national_id" id="national_id" class="form-control">
+                                        <div class="col-sm-5">
+                                            <input type="text" name="national_id" id="national_id" class="form-control" maxlength="14" required>
                                         </div>
                                     </div>
         
                                     <div class="form-group">
                                         <label for="email" class="control-label col-sm-3">Email :</label>
-                                        <div class="col-sm-6">
-                                            <input type="email" name="email" id="email" class="form-control">
+                                        <div class="col-sm-5">
+                                            <input type="email" name="email" id="email" class="form-control"required>
                                         </div>
                                     </div>
         
                                     <div class="form-group">
                                         <label for="present_address" class="control-label col-sm-3">Present Address :</label>
-                                        <div class="col-sm-7">
+                                        <div class="col-sm-5">
                                             <textarea name="present_address" rows="3" id="present_address" class="form-control"></textarea>
                                         </div>
                                     </div>
         
                                     <div class="form-group">
                                         <label for="permanent_address" class="control-label col-sm-3">Permanent Address :</label>
-                                        <div class="col-sm-7">
+                                        <div class="col-sm-5">
                                             <textarea name="permanent_address" id="permanent_address" rows="3" class="form-control"></textarea>
                                         </div>
                                    
