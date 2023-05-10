@@ -104,30 +104,6 @@ a:hover {
     margin-left: 200px;
 } 
  
-.nav-link {
-  display: inline-block;
-  position: relative;
-  color:white
-
-}
-
-.nav-link:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(37, 92, 211, 0.76);
-  transform-origin: center;
-  transition: transform 0.50s ease-in-out;
-}
-
-.nav-link:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
 
 
 
